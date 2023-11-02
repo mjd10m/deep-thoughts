@@ -1,6 +1,6 @@
 import { jwtDecode } from 'jwt-decode'
 
-const AuthClass = class AuthService{
+class AuthService {
     getProfile() {
         return(jwtDecode(this.getToken()))
     }
@@ -32,4 +32,5 @@ const AuthClass = class AuthService{
         window.location.assign('/')
     }
 }
-export default new AuthClass
+// eslint-disable-next-line
+export default new AuthService

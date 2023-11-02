@@ -1,6 +1,6 @@
 import { jwtDecode } from 'jwt-decode'
 
-class AuthService{
+const AuthClass = class AuthService{
     getProfile() {
         return(jwtDecode(this.getToken()))
     }
@@ -32,4 +32,4 @@ class AuthService{
         window.location.assign('/')
     }
 }
-export default new AuthService()
+export default new AuthClass

@@ -892,6 +892,9 @@ nav a:hover {
 .col-12 {
   flex: 0 0 100%;
 }
+.top-border {
+  border-top: 2px solid var(--dark);
+}
 
 /* col-sm */
 @media screen and (min-width: 640px) {
